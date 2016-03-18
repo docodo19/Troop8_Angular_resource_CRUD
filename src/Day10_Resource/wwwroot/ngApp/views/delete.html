@@ -1,0 +1,14 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h1>Are you sure you wan to delete <strong>{{controller.movieToDelete.title}}</strong>??</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="button" value="YES" ng-click="controller.deleteMovie()" class="btn btn-danger"/>
+        <input type="button" value="NO" ng-click="controller.cancel()" class="btn btn-success"/>
+    </div>
+</div>
+
+

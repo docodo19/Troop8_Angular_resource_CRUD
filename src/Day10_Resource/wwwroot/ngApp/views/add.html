@@ -1,0 +1,23 @@
+﻿<h1>Add a new Movie</h1>
+
+<!-- ng-submit allows you to add event handler -->
+<form ng-submit="controller.addMovie()">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <!-- input field for title -->
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" ng-model="controller.movieToCreate.title" class="form-control"/>
+            </div>
+            <!-- input field for director -->
+            <div class="form-group">
+                <label>Director</label>
+                <input type="text" ng-model="controller.movieToCreate.director" class="form-control" />
+            </div>
+            <!-- submit button -->
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
